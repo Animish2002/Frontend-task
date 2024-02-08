@@ -1,0 +1,14 @@
+.background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('../components/assets/login-verification-password.png') center/cover no-repeat;
+        background-size: 100%;
+        z-index: -1;
+      }
+      h1{
+        padding: 20px;
+        padding-left: 220px;
+      }

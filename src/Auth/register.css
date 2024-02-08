@@ -1,0 +1,103 @@
+.background {
+        flex: 1;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      
+      .container {
+        height: 100vh;
+        display: flex;
+        align-items: center; /* Align items vertically in the center */
+      }
+      
+      .left-image {
+        padding-left: 250px;
+        max-width: 900px;
+        margin-right: 90px;
+      }
+      
+      .left-image img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      
+      .register-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 80px;
+      }
+      
+      .register-form {
+        margin: auto; 
+        width: 90%;
+        max-width: 300px;
+        padding: 60px; 
+        background-color: rgba(255, 255, 255, 0.4); 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.34);
+        border-radius: 40px;
+        height: 40%; /* Set the desired height */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      h2 {
+        text-align: center;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+        padding-right: 30px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .error-message {
+        color: red;
+        margin-bottom: 15px;
+      }
+      
+      .submit-button {
+        display: block;
+        margin: 0 auto;
+        padding: 12px 60px;
+        background-color: #c0b7b1;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .submit-button:hover {
+        background-color: #03045e;
+      }
+      
+
+      @media screen and (max-width: 600px) {
+        .container {
+          flex-direction: column; /* Stack items vertically */
+        }
+      
+        .left-image {
+          padding-left: 0;
+          margin-right: 0;
+        }
+      
+        .register-form {
+          max-width: none; /* Allow the form to expand to full width */
+        }
+      }

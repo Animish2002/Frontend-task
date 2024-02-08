@@ -1,0 +1,82 @@
+      .student-list-container {
+        flex: 1;
+        margin-top: 30px;
+        max-width: 700px;
+        margin-left: 300px;
+        margin-right: 300px;
+        padding-right: 40px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 80px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.7); 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.34);
+      }
+
+      .student-list-container::before {
+        flex: 1;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('../components/assets/joanna-kosinska-7ACuHoezUYk-unsplash.jpg') center/cover no-repeat;
+        background-size: 100%; 
+        z-index: -1;
+      }
+
+      h2 {
+        text-align: start;
+      }
+
+      .student-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .student-list table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .student-list th,
+      .student-list td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+
+      .student-list th {
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      .student-list tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .pagination button {
+        margin: 0 5px;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .pagination button.active {
+        background-color: #007bff;
+        color: #fff;
+      }

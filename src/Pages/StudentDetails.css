@@ -1,0 +1,94 @@
+      .student-details-container {
+        flex: 1;
+        margin-top: 90px;
+        max-width: 500px;
+        margin-left: 400px;
+        margin-right: 300px;
+        padding-right: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 80px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.34);
+        position: relative;
+      }
+      
+      .student-details-container::before {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: 100%;
+        z-index: -1;
+      }
+      
+      h2 {
+        text-align: start;
+      }
+      
+      .student-details {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .student-details table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 30px;
+        
+      }
+      
+      .student-details th,
+      .student-details td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+      
+      .student-details th {
+        background-color: #007bff;
+        color: #fff;
+      }
+      
+      .student-details tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      
+      .details-link {
+        display: block;
+        margin-top: 20px;
+        text-align: start;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        position: relative; /* Position relative for absolute positioning of ::after */
+      }
+      
+      .details-link:hover::after {
+        content: '';
+        display: block;
+        background-color: #000; /* Change to the desired underline color on hover */
+        position: absolute;
+        bottom: -2px; /* Adjust to position the underline properly */
+        height: 2px; /* Adjust to the desired thickness of the underline */
+        width: 31%;
+      }
+
+      
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../components/assets/joanna-kosinska-7ACuHoezUYk-unsplash.jpg') center/cover no-repeat;
+  background-size: 100%;
+  z-index: -1;
+}
